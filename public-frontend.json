@@ -49,7 +49,7 @@
             }
         },
         {
-            "name": "LinuxVM",
+            "name": "SSHServer",
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "[variables('api').deployments]",
             "properties": {
@@ -78,7 +78,7 @@
             }
         },
         {
-            "name": "LinuxVM",
+            "name": "Webserver",
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "[variables('api').deployments]",
             "properties": {
