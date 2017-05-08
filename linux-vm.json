@@ -66,7 +66,7 @@
     "resources": [
         {
             "type": "Microsoft.Network/publicIPAddresses",
-            "name": "someName",
+            "name": "[variables('server').pubip]",
             "location": "[resourceGroup().location]",
             "apiVersion": "[variables('api').publicIPAddresses]",
             "tags": {
@@ -81,7 +81,7 @@
         },
         {
             "type": "Microsoft.Network/networkInterfaces",
-            "name": "someName",
+            "name": "[variables('server').nicName]",
             "apiVersion": "[variables('api').networkInterfaces]",
             "location": "[resourceGroup().location]",
             "dependsOn": [
